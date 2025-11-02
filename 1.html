@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Військова техніка України</title>
+
+  <link rel="icon" type="image/svg+xml" href="https://th.bing.com/th/id/OIP.9Zj7Iya-r5HsSzUTdhNmrQHaHa?w=188&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" />
+
+  <meta name="description" content="Інформаційний військовий сайт про українську техніку, авіацію та артилерію." />
+  <style>
+    :root {
+      --bg: #4D4634;
+      --panel: #5A533E;
+      --text: #F3F4E1;
+      --muted: #C7C9A8;
+      --brand: #E4C51D;
+      --brand-2: #FFD700;
+      --accent: #9ACD32;
+      --shadow: 0 10px 30px rgba(25, 20, 10, .6);
+      --radius: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #3E3A2A 60%, var(--bg));
+      color: var(--text);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(77, 70, 52, .95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--brand-2);
+    }
+
+    .nav ul {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 10px;
+      transition: background 0.2s;
+    }
+
+    .nav a:hover {
+      background: rgba(228,197,29,.25);
+    }
+
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+      background: var(--bg);
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      margin: 0 0 12px;
+      color: var(--brand-2);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 0;
+      background: var(--panel);
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    h2 {
+      font-size: 30px;
+      color: var(--brand-2);
+      margin-bottom: 10px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    /* 🎯 Анімація для зображень */
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+      filter: brightness(1.1);
+    }
+
+    footer {
+      background: var(--bg);
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding: 30px 0;
+      text-align: center;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Військова техніка України</div>
+      <ul>
+        <li><a href="#mission">Танки</a></li>
+        <li><a href="#training">Літаки</a></li>
+        <li><a href="#artillery">Артилерія</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Військова техніка України</h1>
+        <p>
+          Військова техніка України — це високотехнологічна складова обороноздатності держави.
+          Вона включає сучасні зразки бронетанкової, артилерійської, авіаційної та безпілотної техніки,
+          що відповідають вимогам сучасного поля бою.
+          Український оборонно-промисловий комплекс постійно вдосконалює озброєння,
+          підвищуючи його ефективність, мобільність і надійність.
+          Військова техніка Збройних Сил України є запорукою захисту суверенітету, територіальної цілісності та безпеки держави.
+        </p>
+      </div>
+    </section>
+
+    <!-- ТАНКИ -->
+    <section id="mission">
+      <div class="container">
+        <h2>Танки</h2>
+        <p class="section-sub">
+          Військові танки — це сталева сила на полі бою, здатна переламати хід будь-якого зіткнення.
+          Вони поєднують потужну вогневу міць, броньований захист і високу мобільність.
+          Танки забезпечують підтримку піхоти, прорив оборони противника та утримання стратегічних позицій.
+          Українські танкісти щодня доводять свою майстерність і відвагу, захищаючи свободу країни.
+          Це незламний щит та ударна міць Збройних Сил України.
+        </p>
+        <div class="gallery">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.bLxJyfZMXT0Sajd9HPo6ZwHaE8?rs=1&pid=ImgDetMain" alt="Танк Т-84 Оплот" />
+          <img src="https://th.bing.com/th/id/OIP.bI82dzb9DasvqGQEafvKZQHaEa?w=274&h=180&c=7&r=0&o=7&pid=1.7" alt="Танк Т-64 Булат" />
+          <img src="https://focus.ua/static/storage/thumbs/1200x630/0/e5/abfe11b1-edf82823a86368524f9b9c44d7e99e50.jpg?v=6415" alt="Танк Т-72" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ЛІТАКИ -->
+    <section id="training">
+      <div class="container">
+        <h2>Літаки</h2>
+        <p class="section-sub">
+          Військові літаки — це символ могутності й технічного прогресу сучасних армій.
+          Вони виконують широкий спектр завдань — від розвідки до точкових ударів і прикриття наземних військ.
+          Їхня швидкість, маневреність і технологічна оснащеність дають перевагу у будь-яких бойових умовах.
+          Українські військові льотчики демонструють відвагу й професіоналізм, захищаючи небо нашої держави.
+          Це крила безпеки та свободи країни.
+        </p>
+        <div class="gallery">
+          <img src="https://24tv.ua/resources/photos/news/202204/1958903.jpg?v=1661254146000" alt="Су-27" />
+          <img src="https://static.espreso.tv/uploads/photobank/311000_312000/311344_181009-Z-VM449-513_new_960x380_0.webp" alt="МіГ-29" />
+          <img src="https://imgproc.airliners.net/photos/airliners/7/9/7/2326797.jpg?v=v40" alt="Су-25" />
+        </div>
+      </div>
+    </section>
+
+    <!-- АРТИЛЕРІЯ -->
+    <section id="artillery">
+      <div class="container">
+        <h2>Артилерія</h2>
+        <p class="section-sub">
+          Артилерія — це потужна вогнева міць, яка визначає успіх сучасних бойових дій.
+          Вона здатна вражати цілі на великих відстанях, підтримуючи піхоту та бронетехніку.
+          Сучасні артилерійські системи відзначаються високою точністю, мобільністю й технологічністю.
+          Українські артилеристи демонструють професіоналізм і мужність, наносячи нищівні удари по ворогу.
+          Їхня робота — це стратегічна перевага та запорука перемоги.
+        </p>
+        <div class="gallery">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.qivVWq0RDgggNum49Q7pKgHaE8?rs=1&pid=ImgDetMain" alt="Гаубиця M777" />
+          <img src="https://tse2.mm.bing.net/th/id/OIP.o7O3u0XP5fBjlYF8etXeFAHaEK?rs=1&pid=ImgDetMain" alt="САУ CAESAR" />
+          <img src="https://tse2.mm.bing.net/th/id/OIP.D1woJvUH4xA34DtKBLcs1gHaE8?rs=1&pid=ImgDetMain" alt="РСЗВ HIMARS" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+       <span id="year"></span> Слава Україні! Героям Слава!
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
